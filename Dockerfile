@@ -1,9 +1,10 @@
 FROM node:20.14.0-alpine
 
-COPY package.json .
+
+WORKDIR /app
+COPY . .
 
 RUN npm install
 
-COPY . .
 
 CMD [ "npm", "start" ]
