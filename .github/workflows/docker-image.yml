@@ -25,4 +25,4 @@ jobs:
     - name: docker login
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: push docker image
-      run: docker push
+      run: docker push ritesh001/testing-actions
