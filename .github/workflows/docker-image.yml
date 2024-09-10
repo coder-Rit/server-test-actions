@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PORT: ${{secret.PORT}}
+  PORT: ${{secrets.PORT}}
   DB_URI_LOCAL: ${{secrets.DB_URI_LOCAL}}
 
 jobs:
