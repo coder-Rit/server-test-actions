@@ -28,7 +28,7 @@ connectTODatabase()
 
 
 app.get("/",(req,res)=>{
-    res.send("🐲🐲 Working fine 🐲🐲 .")
+    res.send("🐲🐲nodejs and nginx working fine 🐲🐲 .")
     console.log("🐲🐲 Working fine 🐲🐲")
 })
  
