@@ -13,12 +13,12 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
 
- 
+const port  = process.env.PORT | 4000
   
 
 // server code
-app.listen(process.env.PORT,()=>{
-    console.log(`server is runing at ${process.env.PORT}`);
+app.listen(port,()=>{
+    console.log(`server is runing at ${port}`);
 })
 
  
